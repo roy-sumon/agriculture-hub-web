@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <title>Agriculture Hub</title>
+  </head>
+  <body class="bg-white">
+   <main>
+    <header class="bg-green-400 text-white py-4 px-2">
+        <div class="mx-auto flex justify-between items-center">
+          <div>
+            <img src="./images/logo.png" width="50" height="50" alt="" />
+          </div>
+          <div class="block sm:hidden">
+              <i class="fa-solid fa-bars text-xl"></i>
+          </div>
+          <nav class="hidden sm:block">
+            <ul class="flex space-x-4">
+              <li><a href="index.html" class="hover:text-pink-500">Home</a></li>
+              <li>
+                <a href="farming.html" class="hover:text-pink-500"
+                  >Farming Guides</a
+                >
+              </li>
+              <li>
+                <a href="crop.html" class="hover:text-pink-500">Crops Details</a>
+              </li>
+              <li>
+                <a href="pest.html" class="hover:text-pink-500">Pest Control</a>
+              </li>
+              <li>
+                <a href="contact.html" class="hover:text-pink-500">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+  
+      <!-- banner section -->
+      <section class="relative">
+        <div>
+          <img
+            src="./images/banar.jpg"
+            alt="bannar-img"
+            class="w-full h-[30rem]"
+          />
+        </div>
+        <div
+          class="text-center absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white p-4"
+        >
+          <h1 class="text-4xl font-bold">
+            Welcome to Agriculter Information Hub
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quod
+            fuga ducimus excepturi, quo eos? Quia soluta cum illo earum
+            voluptatem. Ut velit aliquid deleniti?
+          </p>
+          <a
+            href="#"
+            class="mt-2 bg-green-500 px-4 py-2 rounded hover:bg-green-600 text-white underline"
+            >See Mores Details</a
+          >
+        </div>
+      </section>
+  
+      <!-- Farming Guides Section -->
+      <section class="bg-purple-300 pb-4">
+        <h2 class="text-center text-3xl font-semibold mb-6 bg-purple-400 py-4">
+          Farming Guides
+        </h2>
+        <div
+          class="mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-2"
+        >
+          <!-- Card 1 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="./images/fg1.jpg" class="w-full h-auto" alt="" />
+            <div class="p-4">
+              <h5 class="font-semibold text-lg">How to be Good Farmer</h5>
+              <p class="mt-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo sed
+                ad tempora cum, velit maxime repellat optio nostrum asperiores
+                odio nemo cumque, suscipit esse sequi vel, molestias quaerat unde
+                voluptatem.
+              </p>
+              <a
+                href="#"
+                class="text-blue-500 underline mt-2 block hover:text-black"
+                >Read More</a
+              >
+            </div>
+          </div>
+  
+          <!-- Card 2 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="./images/fg2.jpg" class="w-full h-auto" alt="" />
+            <div class="p-4">
+              <h5 class="font-semibold text-lg">How to cultivate your crops</h5>
+              <p class="mt-2">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati a eos, et exercitationem cupiditate qui minima eveniet
+                provident corporis eius? Hic soluta provident, quidem corrupti
+                optio iusto eius aut dolores?
+              </p>
+              <a
+                href="#"
+                class="text-blue-500 underline mt-2 block hover:text-black"
+                >Read More</a
+              >
+            </div>
+          </div>
+  
+          <!-- Card 3 video -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <iframe
+              width="560"
+              height="300"
+              src="https://www.youtube.com/embed/aDF3Khvhlpg?si=_StwBumTdvSO5PSf"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <div class="p-4">
+              <h5 class="font-semibold text-lg">A Guide to Profitable Farming</h5>
+              <p class="mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos magnam ipsa repellat commodi nihil, dolor quam vero
+                eligendi at molestiae doloremque provident tempora voluptatem modi
+                doloribus possimus accusamus amet quo.
+              </p>
+              <a
+                href="#"
+                class="text-blue-500 underline mt-2 block hover:text-black"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- crops details -->
+      <section class="bg-orange-300 pb-5">
+        <h2 class="text-center text-3xl font-semibold mb-6 bg-orange-400 py-4">
+          Crops Details
+        </h2>
+        <div
+          class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+        >
+          <div class="card bg-white shadow-lg rounded-lg overflow-hidden mb-4">
+            <img src="./images/cp1.jpg" alt="" class="w-full h-auto" />
+            <div class="p-4">
+              <h2 class="text-lg font-semibold">Wheet</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati a eos, et exercitationem cupiditate qui minima eveniet
+                provident corporis eius? Hic soluta provident, quidem corrupti
+                optio iusto eius aut dolores?.
+              </p>
+              <a href="#" class="text-blue-500 underline">Read More</a>
+            </div>
+          </div>
+  
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden mb-4">
+            <img src="./images/cp2.jpg" alt="" class="w-full h-auto" />
+            <div class="p-4">
+              <h2 class="text-lg font-semibold">Corn</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati a eos, et exercitationem cupiditate qui minima eveniet
+                provident corporis eius? Hic soluta provident, quidem corrupti
+                optio iusto eius aut dolores?.
+              </p>
+              <a href="#" class="text-blue-500 underline">Read More</a>
+            </div>
+          </div>
+  
+          <!-- Card  video -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <iframe
+              width="560"
+              height="300"
+              src="https://www.youtube.com/embed/aDF3Khvhlpg?si=_StwBumTdvSO5PSf"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <div class="p-4">
+              <h5 class="font-semibold text-lg">A Guide to Profitable Farming</h5>
+              <p class="mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos magnam ipsa repellat commodi nihil, dolor quam vero
+                eligendi at molestiae doloremque provident tempora voluptatem modi
+                doloribus possimus accusamus amet quo.
+              </p>
+              <a
+                href="#"
+                class="text-blue-500 underline mt-2 block hover:text-black"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- pest control details -->
+      <section class="bg-red-300 pb-5">
+        <h2 class="text-center text-3xl font-semibold mb-6 bg-red-400 py-4">
+          Pest Control
+        </h2>
+        <div class="mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden mb-4">
+            <img src="./images/pc1.webp" alt="" class="w-full h-auto" />
+            <div class="p-4">
+              <h2 class="text-lg font-semibold">Spraing Fertilizer</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati a eos, et exercitationem cupiditate qui minima eveniet
+                provident corporis eius? Hic soluta provident, quidem corrupti
+                optio iusto eius aut dolores?.
+              </p>
+              <a href="#" class="text-blue-500 underline">Read More</a>
+            </div>
+          </div>
+  
+          <!-- Card  video -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <iframe
+              width="560"
+              height="250"
+              src="https://www.youtube.com/embed/J6LT4KFr_w8?si=diPB7dL5onJjOJAq"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <div class="p-4">
+              <h5 class="font-semibold text-lg">A Guide to Profitable Farming</h5>
+              <p class="mt-2">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati a eos, et exercitationem cupiditate qui minima eveniet
+                provident corporis eius? Hic soluta provident, quidem corrupti
+                optio iusto eius aut dolores?.
+              </p>
+              <a
+                href="#"
+                class="text-blue-500 underline mt-2 block hover:text-black"
+                >Read More</a
+              >
+            </div>
+          </div>
+  
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden mb-4">
+            <img src="./images/pc3.jpg" alt="" class="w-full h-auto" />
+            <div class="p-4">
+              <h2 class="text-lg font-semibold">Stink Bug</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati a eos, et exercitationem cupiditate qui minima eveniet
+                provident corporis eius? Hic soluta provident, quidem corrupti
+                optio iusto eius aut dolores?
+              </p>
+              <a href="#" class="text-blue-500 underline">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- this is the footer sections -->
+      <footer class="bg-green-400 text-white py-4 mt-auto">
+        <div class="mx-auto text-center">
+          <p class="mt-2">All Copyright @ 2024 Sumon Roy</p>
+        </div>
+      </footer>
+   </main>
+  </body>
+</html>

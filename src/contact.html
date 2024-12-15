@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <title>Agriculture Hub</title>
+</head>
+<body class="bg-white">
+    <header class="bg-green-400 text-white py-4 px-2">
+        <div class="mx-auto flex justify-between items-center">
+          <div>
+            <img src="./images/logo.png" width="50" height="50" alt="" />
+          </div>
+          <div class="block sm:hidden">
+              <i class="fa-solid fa-bars text-xl"></i>
+          </div>
+          <nav class="hidden sm:block">
+            <ul class="flex space-x-4">
+              <li><a href="index.html" class="hover:text-pink-500">Home</a></li>
+              <li>
+                <a href="farming.html" class="hover:text-pink-500"
+                  >Farming Guides</a
+                >
+              </li>
+              <li>
+                <a href="crop.html" class="hover:text-pink-500">Crops Details</a>
+              </li>
+              <li>
+                <a href="pest.html" class="hover:text-pink-500">Pest Control</a>
+              </li>
+              <li>
+                <a href="contact.html" class="hover:text-pink-500">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <section class="my-4">
+        <div>
+            <img src="./images/2.webp" alt="" class="w-full h-auto">
+        </div>
+    </section>
+
+    <section class="my-8">
+        <h2 class="text-center text-3xl font-semibold mb-6">Contact Info</h2>
+        <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+            <div class="col1 flex flex-col items-center">
+                <i class="fa-solid fa-phone text-2xl"></i>
+                <p>+880 173 2222222</p>
+            </div>
+            <div class="col2 flex flex-col items-center">
+                <i class="fa-solid fa-envelope text-2xl"></i>
+                <p>agrohubbd@gmail.com</p>
+            </div>
+            <div class="col3 flex flex-col items-center">
+                <i class="fa-solid fa-location-dot text-2xl"></i>
+                <p>Mirpur 10, Dhaka</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- this is form section-->
+    <section class="my-8">
+        <div class="mx-auto mt-5">
+            <h2 class="text-center text-3xl font-semibold">Contact Us</h2>
+            <form id="contactForm" action="#" method="POST" class="mt-4 max-w-lg mx-auto space-y-4">
+                <div>
+                    <input type="text" id="name" placeholder="Enter your name" required 
+                           class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-500" />
+                </div>
+                <div>
+                    <input type="email" id="email" placeholder="Enter your email" required 
+                           class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-500" />
+                </div>
+                <div>
+                    <input type="text" id="subject" placeholder="Enter your subject" required 
+                           class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-500" />
+                </div>
+                <div>
+                    <textarea id="message" rows="4" placeholder="Your message" required 
+                              class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-500"></textarea>
+                </div>
+                <div>
+                    <input type="file" id="file" name="fileToUpload" accept=".jpg,.jpeg,.png,.pdf" required>
+                </div>
+                <button type="submit"
+                        class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition">Submit</button>
+            </form>
+        </div>
+    
+        <script>
+           document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const confirmation = confirm("Are you sure you want to submit the form?");
+        
+        if (confirmation) {
+            alert("Form submitted successfully");
+            this.reset();
+        } else {
+            alert("Form submission canceled.");
+        }
+    });
+        </script>
+    </section>
+
+    <!-- this is the footer sections -->
+    <footer class="bg-green-400 text-white py-4 mt-auto">
+        <div class="mx-auto text-center">
+            <p class="mt-2">All Copyright @ 2024 Sumon Roy</p>
+        </div>
+    </footer>
+  
+</section>
+</body>
+</html>
